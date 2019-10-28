@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`, `ROS_PACKAGE_PATH`, and
+Summary: The package provides ROS environment variables.
 
 
 The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`,
