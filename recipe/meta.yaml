@@ -1,7 +1,5 @@
 {% set version = "1.2.2-1" %}
 {% set sha256 = "928aa91623553711b5e51dafc1271717e7d69ad0bd202a42309100c25721d53a" %}
-{% set version = "1.2.2-1" %}
-{% set sha256 = "928aa91623553711b5e51dafc1271717e7d69ad0bd202a42309100c25721d53a" %}
 
 package:
   name: ros-environment
@@ -11,9 +9,9 @@ source:
   url: https://github.com/ros-gbp/ros_environment-release/archive/release/melodic/ros_environment/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
-
 build:
-  number: 0  skip: true  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
