@@ -1,0 +1,7 @@
+#!/bin/sh
+
+unset ROS_DISTRO
+unset ROS_ETC_DIR
+unset ROS_PACKAGE_PATH
+unset ROS_PYTHON_VERSION
+unset ROS_VERSION

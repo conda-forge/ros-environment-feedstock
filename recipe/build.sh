@@ -28,3 +28,14 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$PREFIX \
 
 make VERBOSE=1 -j${CPU_COUNT}
 make install
+
+# copy activation scripts to conda environment
+mkdir -p "${PREFIX}/etc/conda/activate.d"
+for SCRIPT in "1.ros_distro.sh" "1.ros_etc_dir.sh" "1.ros_package_path.sh" "1.ros_python_version.sh" "1.ros_version.sh"
+do
+  cp "${PREFIX}/etc/catkin/profile.d/${SCRIPT}" "${PREFIX}/etc/conda/activate.d/${SCRIPT}"
+done
+
+mkdir -p "${PREFIX}/etc/conda/deactivate.d"
+cp "${RECIPE_DIR}/ros_deactivate.sh" "${PREFIX}/etc/conda/deactivate.d/ros_deactivate.sh"
+
